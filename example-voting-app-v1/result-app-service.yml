@@ -8,7 +8,7 @@ spec:
   ports:
     - targetPort: 80
       port: 80
-      nodePort: 30080
+      nodePort: 30009
   selector:
     name: result-app-pod
     app: example-result-app
