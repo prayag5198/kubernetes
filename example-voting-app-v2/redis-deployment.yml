@@ -15,9 +15,9 @@ spec:
   template:
     metadata:
       name: redis-pod
-    labels:
-      name: redis-pod
-      app: example-voting-app
+      labels:
+        name: redis-pod
+        app: example-voting-app
     spec:
       containers:
         - name: redis
