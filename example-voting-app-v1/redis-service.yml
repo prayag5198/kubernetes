@@ -4,11 +4,10 @@ metadata:
   name: redis-service
   
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - targetPort: 80
-      port: 80
-      nodePort: 6379
+    - targetPort: 6379
+      port: 6379
   selector:
     name: redis-pod
     app: example-voting-app
