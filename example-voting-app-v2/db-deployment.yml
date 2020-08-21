@@ -12,18 +12,18 @@ spec:
     matchLabels:
       name: redis-deployment
       app: example-voting-app
-    template:
-      metadata:
+  template:
+    metadata:
+      name: db-deployment
+      labels:
         name: db-deployment
-        labels:
-          name: db-deployment
-          app: example-voting-app
-      spec:
-        containers:
-          - name: db
-            image: postgres:9.4
-            ports:
-              - containerPort: 5432
-            env:
-              - name: POSTGRES_HOST_AUTH_METHOD
-                value: trust
+        app: example-voting-app
+    spec:
+      containers:
+        - name: db
+          image: postgres:9.4
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_HOST_AUTH_METHOD
+              value: trust
