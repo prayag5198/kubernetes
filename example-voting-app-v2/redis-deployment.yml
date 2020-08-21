@@ -10,13 +10,13 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: redis-deployment
+      name: redis-pod
       app: example-voting-app
   template:
     metadata:
-      name: redis-deployment
+      name: redis-pod
     labels:
-      name: redis-deployment
+      name: redis-pod
       app: example-voting-app
     spec:
       containers:
