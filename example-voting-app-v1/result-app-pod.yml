@@ -4,7 +4,7 @@ metadata:
   name: result-app-pod
   labels:
     name: result-app-pod
-    app: example-result-app
+    app: example-voting-app
 
 spec:
   containers:
