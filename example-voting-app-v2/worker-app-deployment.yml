@@ -10,14 +10,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: worker-app-deployment
+      name: worker-app-pod
       app: example-voting-app
   template:
     metadata:
-      name: worker-app-deployment
-    labels:
-      name: worker-app-deployment
-      app: example-voting-app
+      name: worker-app-pod
+      labels:
+        name: worker-app-pod
+        app: example-voting-app
     spec:
       containers:
         - name: worker-app
