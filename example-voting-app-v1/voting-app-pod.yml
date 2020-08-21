@@ -8,7 +8,7 @@ metadata:
 
 spec:
   containers:
-    - name: nginx-container
+    - name: voting-app
       image: prabhavagrawal/vote-app
       ports:
         - containerPort: 80
