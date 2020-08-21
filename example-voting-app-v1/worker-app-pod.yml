@@ -10,5 +10,3 @@ spec:
   containers:
     - name: worker-app
       image: prabhavagrawal/worker-app
-      ports:
-        - containerPort: 80
